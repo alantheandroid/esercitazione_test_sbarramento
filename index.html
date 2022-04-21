@@ -13,11 +13,11 @@
 </head>
 <body>
 <!-- NAVBAR -->
-    <nav>
-        <div class="logo-container">
+    <nav class="navbar-section flex">
+        <div class="logo-container flex">
             <i class="fa-brands fa-medium" id="medium-logo"></i>
         </div>
-        <div class="icon-section">
+        <div class="icon-list flex">
             <div class="icon-container">
                 <span class="material-icons-outlined">
                     home
@@ -62,9 +62,22 @@
     </main>
 <!-- SIDEBAR -->
     <aside class="sidebar">
-        <div class="call-to-action-container">
-            <button id="registration-button">Get started</button>
-            <a id="sign-in-link">Sign in</a>
+        <div class="call-to-action-container flex">
+            <input class="registration-button" type="button" value="Get started" />
+            <a href="" id="sign-in-link">Sign in</a>
+        </div>
+        <div class="searchbar-container flex">
+            <span class="material-icons-outlined">
+                search
+            </span>
+            <input type="search" name="searchbar" id="searchbar" placeholder="Search" />
+        </div>
+        <div class="author-section">
+            <div class="author-picture-big">
+                <a href="">
+                    <img src="assets/profile_picture_squared.jpg" alt="author picture" />
+                </a>
+            </div>
         </div>
     </aside>
 </body>

@@ -5,10 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+a {
+    text-decoration-line: none;
+}
+
+.flex {
     display: flex;
-    flex-direction: column;
+    justify-items: center;
     align-items: center;
+}
+
+nav {
+    flex-direction: column;
     justify-content: space-between;
     position: fixed;
     height: 100vh;
@@ -18,9 +26,7 @@ nav {
 }
 
 .logo-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 #medium-logo {
@@ -29,14 +35,19 @@ nav {
     width: auto;
 }
 
-.icon-section{
-    display: flex;
+.icon-list {
     flex-direction: column;
-    justify-items: center;
+    align-items: stretch;
     justify-content: space-evenly;
     text-align: center;
     height: 50%;
     width: 100%;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: lightgray;
 }
 
 .icon-container {
@@ -47,41 +58,78 @@ nav {
     font-size: 1.5rem;
 }
 
-hr {
-    height: 1px;
-    border: none;
-    background-color: lightgray;
-}
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 100vh;
     padding: 40px 25px;
     border-left: 1px solid lightgrey;
     position: absolute;
     right: 0%;
-    display: flex;
+}
+
+.sidebar div {
+    margin-bottom: 40px;
 }
 
 .call-to-action-container {
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: stretch;
     width: 100%;
-    height: 35px;
+    height: 40px;
 }
 
-#registration-button {
-    flex-grow: 2;
+.registration-button {
+    flex-grow: 4;
+    height: 100%;
     background-color: black;
-    color: whitesmoke;
+    opacity: 80%;
     border: none;
     border-radius: 50px;
+    color: whitesmoke;
+}
+
+.registration-button:hover {
+    opacity: 100%;
+    transition: 0.3s;
 }
 
 #sign-in-link {
     flex-grow: 1;
+    text-align: center;
     background: none;
     color: cornflowerblue;
+}
+
+#sign-in-link:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.searchbar-container {
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+}
+
+.searchbar-container span {
+    margin: 0 10px;
+}
+
+#searchbar {
+    border: none;
+}
+
+#searchbar:focus-visible {
+    outline: none;
+}
+
+.author-picture-big {
+    width: 100px;
+}
+
+.author-picture-big img {
+    width: 100%;
+    border-radius: 100%;
 }
