@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -11,9 +12,9 @@ nav {
     justify-content: space-between;
     position: fixed;
     height: 100vh;
-    width: 5.5%;
-    padding-top: 30px;
-    border: 1px solid lightgrey;
+    width: 80px;
+    padding: 40px 25px;
+    border-right: 1px solid lightgrey;
 }
 
 .logo-container {
@@ -25,7 +26,7 @@ nav {
 #medium-logo {
     font-size: 1.8rem;
     text-align: center;
-    width: 100%;
+    width: auto;
 }
 
 .icon-section{
@@ -35,12 +36,52 @@ nav {
     justify-content: space-evenly;
     text-align: center;
     height: 50%;
+    width: 100%;
 }
 
 .icon-container {
     color: grey;
 }
 
-div i, div span {
-    font-size: 24px;
+.material-icons-outlined {
+    font-size: 1.5rem;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: lightgray;
+}
+
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    padding: 40px 25px;
+    border-left: 1px solid lightgrey;
+    position: absolute;
+    right: 0%;
+    display: flex;
+}
+
+.call-to-action-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+    height: 35px;
+}
+
+#registration-button {
+    flex-grow: 2;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+}
+
+#sign-in-link {
+    flex-grow: 1;
+    background: none;
+    color: cornflowerblue;
 }
