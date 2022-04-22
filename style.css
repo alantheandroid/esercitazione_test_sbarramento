@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -52,6 +52,13 @@ hr {
 
 .icon-container {
     color: grey;
+    transition: 0.3s;
+}
+
+.icon-container:hover {
+    color: black;
+
+    cursor: pointer;
 }
 
 .material-icons-outlined {
@@ -60,17 +67,17 @@ hr {
 
 
 .sidebar {
-    display: flex;
     flex-direction: column;
+    align-items: stretch;
     width: 400px;
     height: 100vh;
     padding: 40px 25px;
     border-left: 1px solid lightgrey;
     position: absolute;
-    right: 0%;
+    right: 0;
 }
 
-.sidebar div {
+.sidebar > div {
     margin-bottom: 40px;
 }
 
@@ -88,11 +95,11 @@ hr {
     border: none;
     border-radius: 50px;
     color: whitesmoke;
+    transition: 0.3s;
 }
 
 .registration-button:hover {
     opacity: 100%;
-    transition: 0.3s;
 }
 
 #sign-in-link {
@@ -125,11 +132,50 @@ hr {
     outline: none;
 }
 
+.author-section > div {
+    margin-bottom: 20px;
+}
+
+.author-section p {
+    color: grey;
+}
+
 .author-picture-big {
-    width: 100px;
+    width: 90px;
 }
 
 .author-picture-big img {
     width: 100%;
     border-radius: 100%;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.follow-author-container {
+
+    height: 40px;
+    gap: 10px;
+}
+
+.follow-button {
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+}
+
+.mail-button {
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: dodgerblue;
+    color: whitesmoke;
 }
