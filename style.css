@@ -1,3 +1,7 @@
+@import url(css/navbar.css);
+
+@import url(css/sidebar.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -9,173 +13,18 @@ a {
     text-decoration-line: none;
 }
 
-.flex {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
-nav {
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    height: 100vh;
-    width: 80px;
-    padding: 40px 25px;
-    border-right: 1px solid lightgrey;
-}
-
-.logo-container {
-    align-items: stretch;
-}
-
-#medium-logo {
-    font-size: 1.8rem;
-    text-align: center;
-    width: auto;
-}
-
-.icon-list {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-evenly;
-    text-align: center;
-    height: 50%;
-    width: 100%;
-}
-
 hr {
     height: 1px;
     border: none;
     background-color: lightgray;
 }
 
-.icon-container {
-    color: grey;
-    transition: 0.3s;
+.flex {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
-.icon-container:hover {
-    color: black;
-
-    cursor: pointer;
-}
-
-.material-icons-outlined {
-    font-size: 1.5rem;
-}
-
-
-.sidebar {
-    flex-direction: column;
+.stretch {
     align-items: stretch;
-    width: 400px;
-    height: 100vh;
-    padding: 40px 25px;
-    border-left: 1px solid lightgrey;
-    position: absolute;
-    right: 0;
-}
-
-.sidebar > div {
-    margin-bottom: 40px;
-}
-
-.call-to-action-container {
-    justify-content: space-evenly;
-    width: 100%;
-    height: 40px;
-}
-
-.registration-button {
-    flex-grow: 4;
-    height: 100%;
-    background-color: black;
-    opacity: 80%;
-    border: none;
-    border-radius: 50px;
-    color: whitesmoke;
-    transition: 0.3s;
-}
-
-.registration-button:hover {
-    opacity: 100%;
-}
-
-#sign-in-link {
-    flex-grow: 1;
-    text-align: center;
-    background: none;
-    color: cornflowerblue;
-}
-
-#sign-in-link:hover {
-    color: black;
-    transition: 0.3s;
-}
-
-.searchbar-container {
-    height: 40px;
-    border: 1px solid lightgrey;
-    border-radius: 50px;
-}
-
-.searchbar-container span {
-    margin: 0 10px;
-}
-
-#searchbar {
-    border: none;
-}
-
-#searchbar:focus-visible {
-    outline: none;
-}
-
-.author-section > div {
-    margin-bottom: 20px;
-}
-
-.author-section p {
-    color: grey;
-}
-
-.author-picture-big {
-    width: 90px;
-}
-
-.author-picture-big img {
-    width: 100%;
-    border-radius: 100%;
-}
-
-.sidebar h2 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.follow-author-container {
-
-    height: 40px;
-    gap: 10px;
-}
-
-.follow-button {
-    height: 100%;
-    padding: 0 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: dodgerblue;
-    color: whitesmoke;
-}
-
-.mail-button {
-    justify-content: center;
-    height: 100%;
-    width: 40px;
-    border-radius: 50px;
-    border: none;
-    background-color: dodgerblue;
-    color: whitesmoke;
 }

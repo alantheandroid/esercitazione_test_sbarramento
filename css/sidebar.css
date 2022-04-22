@@ -1,0 +1,113 @@
+.sidebar-section {
+    flex-direction: column;
+    align-items: stretch;
+    width: 400px;
+    height: 100vh;
+    padding: 40px 25px;
+    border-left: 1px solid lightgrey;
+    position: absolute;
+    right: 0;
+}
+
+.sidebar-section > div {
+    margin-bottom: 40px;
+}
+
+.call-to-action-container {
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40px;
+}
+
+.registration-button {
+    flex-grow: 4;
+    height: 100%;
+    background-color: black;
+    opacity: 80%;
+    border: none;
+    border-radius: 50px;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.registration-button:hover {
+    opacity: 100%;
+}
+
+#sign-in-link {
+    flex-grow: 1;
+    text-align: center;
+    background: none;
+    color: cornflowerblue;
+}
+
+#sign-in-link:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.searchbar-container {
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+}
+
+.searchbar-container span {
+    margin: 0 10px;
+}
+
+#searchbar {
+    border: none;
+}
+
+#searchbar:focus-visible {
+    outline: none;
+}
+
+.author-section > div {
+    margin-bottom: 20px;
+}
+
+.author-section p {
+    color: grey;
+}
+
+.author-picture-big {
+    width: 90px;
+}
+
+.author-picture-big img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.sidebar-section h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.follow-author-container {
+
+    height: 40px;
+    gap: 10px;
+}
+
+.follow-button {
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+}
+
+.mail-button {
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: dodgerblue;
+    color: whitesmoke;
+}

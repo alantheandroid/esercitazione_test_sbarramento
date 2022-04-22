@@ -1,0 +1,49 @@
+hr {
+    height: 1px;
+    border: none;
+    background-color: lightgray;
+}
+
+.navbar-section {
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100vh;
+    width: 80px;
+    padding: 40px 25px;
+    border-right: 1px solid lightgrey;
+}
+
+.logo-container {
+    align-items: stretch;
+}
+
+#medium-logo {
+    font-size: 1.8rem;
+    text-align: center;
+    width: auto;
+}
+
+.icon-list {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+
+.icon-container {
+    color: grey;
+    transition: 0.3s;
+}
+
+.icon-container:hover {
+    color: black;
+
+    cursor: pointer;
+}
+
+.material-icons-outlined {
+    font-size: 1.5rem;
+}
