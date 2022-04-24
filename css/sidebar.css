@@ -1,16 +1,11 @@
 .sidebar-section {
+    float: left;
     flex-direction: column;
     align-items: stretch;
-    width: 400px;
-    height: 100vh;
+    gap: 40px;
+    width: 25%;
     padding: 40px 25px;
     border-left: 1px solid lightgrey;
-    position: absolute;
-    right: 0;
-}
-
-.sidebar-section > div {
-    margin-bottom: 40px;
 }
 
 .call-to-action-container {
@@ -27,7 +22,6 @@
     border: none;
     border-radius: 50px;
     color: whitesmoke;
-    transition: 0.3s;
 }
 
 .registration-button:hover {
@@ -43,7 +37,6 @@
 
 #sign-in-link:hover {
     color: black;
-    transition: 0.3s;
 }
 
 .searchbar-container {
@@ -110,4 +103,8 @@
     border: none;
     background-color: dodgerblue;
     color: whitesmoke;
+}
+
+.follow-button:hover, .mail-button:hover {
+    background-color: darkslateblue;
 }

@@ -18,22 +18,22 @@
             <i class="fa-brands fa-medium" id="medium-logo"></i>
         </div>
         <div class="icon-list flex stretch">
-            <div class="icon-container">
+            <div class="icon-container clickable">
                 <span class="material-icons-outlined">
                     home
                 </span>
             </div>
-            <div class="icon-container">
+            <div class="icon-container clickable">
                 <span class="material-icons-outlined">
                     notifications
                 </span>
             </div>
-            <div class="icon-container">
+            <div class="icon-container clickable">
                 <span class="material-icons-outlined">
                     bookmarks
                 </span>
             </div>
-            <div class="icon-container">
+            <div class="icon-container clickable">
                 <span class="material-icons-outlined">
                     article
                 </span>
@@ -41,7 +41,7 @@
             <div class="icon-container">
                 <hr>
             </div>
-            <div class="icon-container">
+            <div class="icon-container clickable">
                 <span class="material-icons-outlined">
                     edit_note
                 </span>
@@ -50,21 +50,20 @@
         <div class="empty-container">
         </div>
     </nav>
-
-<!-- HEADER -->
-    <header>
-        
-    </header>
-
 <!-- MAIN BODY -->
-    <main>
-
+    <main class="main-section flex">
+        <header class="header-section flex">
+            <div class="logo-container flex">
+                <img src="assets/gitconnected_logo.png" alt="gitconnected logo" id="gitconnected-logo">
+                <p>Published in <a href="">Level Up Coding</a></p>
+            </div>
+        </header>
     </main>
 <!-- SIDEBAR -->
     <aside class="sidebar-section flex stretch">
         <div class="call-to-action-container flex">
-            <input class="registration-button" type="button" value="Get started" />
-            <a href="" id="sign-in-link">Sign in</a>
+            <input class="registration-button clickable" type="button" value="Get started" />
+            <a href="" class="clickable" id="sign-in-link">Sign in</a>
         </div>
         <div class="searchbar-container flex">
             <span class="material-icons-outlined">
@@ -79,15 +78,15 @@
                 </a>
             </div>
             <div class="author-info">
-                <h2>Alessio Ilardi</h2>
-                <p>1.4K Followers</p>
+                <a href=""><h2>Alessio Ilardi</h2></a>
+                <a href=""><p>1.4K Followers</p></a>
             </div>
             <div class="author-bio">
                 <p>A software developer by the day and a gamer by the night! | Explore more articles by being a member here →   <a href="https://www.instagram.com/alantheandroid/">@alantheandroid</a></p>
             </div>
             <div class="follow-author-container flex">
-                <input class="follow-button" type="button" name="follow-button" value="Follow" />
-                <button class="mail-button flex"><span class="material-icons-outlined">
+                <input class="follow-button clickable" type="button" name="follow-button" value="Follow" />
+                <button class="mail-button flex clickable"><span class="material-icons-outlined">
                     email
                     </span>
                 </button>
@@ -95,6 +94,8 @@
         </div>
         <div class="suggested-articles-container">
             <h2>More from Medium</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut tempore doloribus omnis laudantium soluta necessitatibus eos repellat quos esse, obcaecati odit fuga natus, hic quae? Rem natus vitae nulla!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias, eaque, officia illum reiciendis odio iusto consectetur hic non ipsa eius ea repudiandae iure fuga quis rem, amet mollitia sequi?</p>
         </div>
     </aside>
 </body>

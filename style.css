@@ -1,5 +1,7 @@
 @import url(css/navbar.css);
 
+@import url(css/main.css);
+
 @import url(css/sidebar.css);
 
 * {
@@ -27,4 +29,16 @@ hr {
 
 .stretch {
     align-items: stretch;
+}
+
+.clickable {
+    transition: 0.3s;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.debug {
+    border: 1px dotted red;
 }
