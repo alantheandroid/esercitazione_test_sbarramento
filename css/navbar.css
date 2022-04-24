@@ -34,12 +34,6 @@
     color: grey;
 }
 
-hr {
-    height: 1px;
-    border: none;
-    background-color: lightgray;
-}
-
 .icon-container:hover {
     color: black;
 }
